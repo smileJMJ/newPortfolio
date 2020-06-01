@@ -1,0 +1,8 @@
+@import 'reset.css';
+@import 'font.css';
+
+html, body {
+    font-family: 'NotoSanskr_Regular', 'Gothic', sans-serif;
+    color: #fff;
+    background: #000;
+}
