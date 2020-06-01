@@ -8,13 +8,37 @@ module.exports = (mode) => {
 
     return {
         entry: {
-            app: './src/index.js',
-            style: './src/resource/css/common.scss'
+            style: './src/resource/css/common.scss',
+            app: './src/index.js'
         },
         output: {
             filename: '[name].[hash].js',
             path: path.resolve(__dirname, '../dist')
         },
+        optimization: {
+            splitChunks: {
+                cacheGroups: {
+                    styles: {
+                        name: 'bundle',
+                        test: /\.s[ac]ss$/,
+                        chunks: 'all',
+                        enforce: true,
+                    }
+                }
+            }
+        },
+        plugins: [
+            new CleanWebpackPlugin(),
+            new MiniCssExtractPlugin({
+                outputPath: './dist/resource/css',
+                publicPath: '/resource/css/',
+                //filename: isDevMode ? 'bundle.css' : 'bundle.[hash].css',
+                filename: isDevMode ? '[name].css' : '[name].[hash].css'
+            }),
+            new HtmlWebpackPlugin({
+                template: './src/index.html'
+            })
+        ],
         module: {
             rules: [
                 {
@@ -72,18 +96,6 @@ module.exports = (mode) => {
                 }
             ]
         },
-        plugins: [
-            new CleanWebpackPlugin(),
-            new MiniCssExtractPlugin({
-                outputPath: './resource/css',
-                publicPath: '/resource/css/',
-                //filename: isDevMode ? 'bundle.css' : 'bundle.[hash].css',
-                filename: isDevMode ? '[name].css' : '[name].[hash].css'
-            }),
-            new HtmlWebpackPlugin({
-                template: './src/index.html'
-            })
-        ],
         resolve: {
             modules: ['node_modules'],
             extensions: ['.js', '.ts', '.tsx', '.css', '.scss', 'json']
