@@ -1,4 +1,5 @@
 const path = require('path');
+const TerserPlugin = require('terser-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
@@ -16,9 +17,17 @@ module.exports = (mode) => {
             path: path.resolve(__dirname, '../dist')
         },
         optimization: {
+            minimize: isDevMode ? false : true, // production mode일 땐 webpack에서 TerserPlugin 자동 실행함!
+            minimizer: [
+                new TerserPlugin({
+                    cache: true,
+                    parallel: true,
+                    sourceMap: true
+                })
+            ],
             splitChunks: {
                 cacheGroups: {
-                    styles: {
+                    style: {
                         name: 'bundle',
                         test: /\.s[ac]ss$/,
                         chunks: 'all',
@@ -30,9 +39,7 @@ module.exports = (mode) => {
         plugins: [
             new CleanWebpackPlugin(),
             new MiniCssExtractPlugin({
-                outputPath: './dist/resource/css',
                 publicPath: '/resource/css/',
-                //filename: isDevMode ? 'bundle.css' : 'bundle.[hash].css',
                 filename: isDevMode ? '[name].css' : '[name].[hash].css'
             }),
             new HtmlWebpackPlugin({
