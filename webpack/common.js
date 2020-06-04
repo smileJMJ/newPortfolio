@@ -10,7 +10,7 @@ module.exports = (mode) => {
     return {
         entry: {
             style: './src/resource/css/common.scss',
-            app: './src/index.js'
+            app: './src/index.tsx'
         },
         output: {
             filename: '[name].[hash].js',
