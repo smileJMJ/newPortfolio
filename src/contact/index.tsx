@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Index = () => {
+const Contact = () => {
     return(
         <>
             <h1>CONTACT</h1>
@@ -8,4 +8,4 @@ const Index = () => {
     );
 };
 
-export default Index;
+export default Contact;
