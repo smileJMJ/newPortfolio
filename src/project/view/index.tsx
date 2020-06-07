@@ -1,9 +1,22 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 
-const View = () => {
+const View = (props: any) => {
+    const id = props.match.params.id;
+    const [data, setData] = useState({});
+    console.log(id);
+    useEffect(() => {
+        import(`../../resource/json/${id}.json`)
+            .then(module => setData(module.default)); // dynamic import
+        console.log('mount', data);
+    }, []);
+    console.log('data', data);
     return(
         <>
-            <h1>Project View</h1>
+            {   data &&
+                <div>
+                    <h1>{data.title}</h1>
+                </div>
+            }
         </>
     );
 };

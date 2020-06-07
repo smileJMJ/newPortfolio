@@ -14,7 +14,8 @@ module.exports = (mode) => {
         },
         output: {
             filename: '[name].[hash].js',
-            path: path.resolve(__dirname, '../dist')
+            path: path.resolve(__dirname, '../dist'),
+            publicPath: '/'
         },
         optimization: {
             minimize: isDevMode ? false : true, // production mode일 땐 webpack에서 TerserPlugin 자동 실행함!
@@ -49,12 +50,12 @@ module.exports = (mode) => {
         module: {
             rules: [
                 {
-                    test: /\.js|ts(x?)$/,
+                    test: /\.(js|ts(x?))$/, // json이 포함되지 않도록 정규식 변경
                     exclude: /node_modules/,
                     loader: 'babel-loader'
                 },
                 {
-                    test: /\.s[ac]ss$/,
+                    test: /\.(s[ac]ss)$/,
                     use: [
                         MiniCssExtractPlugin.loader,
                         {
@@ -100,7 +101,16 @@ module.exports = (mode) => {
                         outputPath: './resource/css/font',
                         publicPath: '/resource/css/font'
                     }
-                }
+                },
+                /*{
+                    test: /\.(json)$/,
+                    loader: 'file-loader',
+                    options: {
+                        name: '[name].[ext]',
+                        outputPath: './resource/json',
+                        publicPath: '/resource/json'
+                    }
+                }*/
             ]
         },
         resolve: {
