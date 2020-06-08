@@ -1,5 +1,13 @@
 {
   "title": "jobflex 프로젝트",
   "term": "2020.03 ~ 현재",
-  "content": "<p>JOBFLEX 내용 </p><br/><div>드루와드루와</div>"
+  "content": "<p>JOBFLEX 내용 </p><br/><div>드루와드루와</div>",
+  "visual": "<img src='/resource/img/test.jpg' alt=''/>",
+  "introduce": "<p>소개글입니다.</p>",
+  "client": "<p>고객사 정보입니다.</p>",
+  "category": ["RESPONSIVE", "WEBSITE", "WEBSOLUTION"],
+  "role": "<p>Front-End 개발자</p>",
+  "devEnv": "<p>React Mobx Webpack</p>",
+  "result": "<div>결과 내용입니다.</div>",
+  "experience": "<div>느낀점을 이러합니다.</div>"
 }
