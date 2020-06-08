@@ -1,20 +1,20 @@
 import React, {useEffect, useState} from 'react';
+import ProjectViewVM from './viewModel/projectViewVM';
 
+const projectViewVM = new ProjectViewVM();
 const View = (props: any) => {
     const id = props.match.params.id;
-    const [data, setData] = useState({});
-    console.log(id);
+    const {projectContent} = projectViewVM;
+
     useEffect(() => {
-        import(`../../resource/json/${id}.json`)
-            .then(module => setData(module.default)); // dynamic import
-        console.log('mount', data);
+        projectViewVM.load(id);
     }, []);
-    console.log('data', data);
+console.log(projectContent);
     return(
         <>
-            {   data &&
+            {   projectContent &&
                 <div>
-                    <h1>{data.title}</h1>
+                    <h1>{projectContent}</h1>
                 </div>
             }
         </>
