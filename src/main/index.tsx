@@ -5,7 +5,6 @@ import Header from "../component/header";
 const Main = () => {
     return(
         <>
-            <Header/>
             <ProjectList/>
         </>
     );

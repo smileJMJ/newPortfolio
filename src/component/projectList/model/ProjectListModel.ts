@@ -1,10 +1,14 @@
 import {action, observable} from "mobx";
-import {IProjectListItem} from "../../../types";
+import {IProjectListItem} from "../types";
 import ProjectList from '../../../resource/json/project.json';
 
 
-export default class ProjectListModel {
+class ProjectListModel {
     @observable private _projectList: IProjectListItem[] = [];
+
+    constructor() {
+        this.load();
+    }
 
     get projectList(): IProjectListItem[] {
         return this._projectList;
@@ -12,12 +16,10 @@ export default class ProjectListModel {
 
     @action
     load() {
-        /*const self = this;
-        import('../../../resource/json/project.json')
-            .then(module => {
-                self._projectList = module.default;
-                console.log('list', self._projectList);
-            });*/
         this._projectList = ProjectList;
     }
 }
+
+// singleton
+const projectListModel = new ProjectListModel();
+export default projectListModel;

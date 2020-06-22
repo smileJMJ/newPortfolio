@@ -1,8 +1,13 @@
 @import 'reset';
 @import 'font';
+@import './mixin/mixin';
 
-html, body {
+body {
     font-family: 'NotoSanskr_Regular', 'Gothic', sans-serif;
     color: #333;
-    background: #fff;
+    background: #000;
+}
+
+:global #root {
+    @include webPadding;
 }
