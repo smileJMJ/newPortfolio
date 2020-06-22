@@ -1,32 +1,14 @@
-import React, {useEffect} from 'react';
-import {observer} from "mobx-react";
-import ProjectListVM from "./viewModel/projectListVM";
-import {Link} from "react-router-dom";
+import React from 'react';
+import ProjectList from '../../component/projectList';
+import Header from "../../component/header";
 
-
-const projectListVM: ProjectListVM = new ProjectListVM();
-const List = observer(() => {
-    const {listData} = projectListVM;
-    useEffect(() => {
-        projectListVM.load();
-    }, []);
-console.log('listData', listData);
+const List = () => {
     return(
-        <ul>
-            {
-                listData.map(v => <li key={v['title']}>
-                    <Link to={v['url']}>
-                        <dl>
-                            <dt>{v['title']}</dt>
-                            <dd>{v['term']}</dd>
-                            <dd>{v['category']}</dd>
-                            <dd><img src={v['thumbnail']} alt=""/></dd>
-                        </dl>
-                    </Link>
-                </li>)
-            }
-        </ul>
-    );
-});
+        <>
+            <Header/>
+            <ProjectList/>
+        </>
+    )
+};
 
 export default List;

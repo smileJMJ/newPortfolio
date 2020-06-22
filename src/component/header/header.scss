@@ -1,0 +1,19 @@
+.header {
+  display: flex;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 5;
+  width: 100%;
+  height: 220px;
+
+  > h1 {
+    flex: none;
+    margin-left: 205px;
+    margin-top: 75px;
+  }
+
+  > .gnb {
+    margin-left: auto;
+  }
+}

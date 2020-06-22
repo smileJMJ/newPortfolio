@@ -1,5 +1,5 @@
 import {action, observable} from "mobx";
-import ProjectListModel from "../model/projectListModel";
+import ProjectListModel from "../model/ProjectListModel";
 import {IProjectListItem} from "../../../types";
 
 export default class ProjectListVM {
