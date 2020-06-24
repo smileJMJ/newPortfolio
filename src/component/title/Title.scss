@@ -1,0 +1,12 @@
+.title {
+  display: flex;
+  align-items: flex-start;
+
+  > p {
+    flex: none;
+  }
+
+  > h1 {
+    margin-left: auto;
+  }
+}
