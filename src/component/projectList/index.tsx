@@ -3,8 +3,14 @@ import {observer} from "mobx-react";
 import projectListVM from "./viewModel/ProjectListVM";
 import ListItem from './view/ListItem';
 
-const List = observer(() => {
-    const {projectList} = projectListVM;
+interface IProps {
+    maxlength?: number;
+}
+
+const List = observer((props: IProps) => {
+    let {projectList} = projectListVM;
+    const {maxlength} = props;
+    if(maxlength) projectList = projectList.slice(0, maxlength);
 
     return(
         <ul>

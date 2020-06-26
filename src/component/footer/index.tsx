@@ -8,7 +8,7 @@ const Footer = () => {
                 <li>
                     <dl>
                         <dt>COPYRIGHT</dt>
-                        <dd>© 2020 MJPF. All rights reserved</dd>
+                        <dd className={css.copyright}>© 2020 MJPF. All rights reserved</dd>
                     </dl>
                 </li>
                 <li>
