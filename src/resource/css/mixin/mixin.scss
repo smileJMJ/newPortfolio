@@ -1,3 +1,11 @@
 @mixin webPadding {
   padding: 0 8%;
 }
+
+@mixin hidden {
+  display: block;
+  overflow: hidden;
+  width: 0;
+  height: 0;
+  text-indent: -9999px;
+}

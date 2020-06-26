@@ -16,11 +16,7 @@
       background: url('./mj.svg') no-repeat left top;
 
       > .hidden {
-        display: block;
-        overflow: hidden;
-        width: 0;
-        height: 0;
-        text-indent: -9999px;
+        @include hidden;
       }
     }
   }
