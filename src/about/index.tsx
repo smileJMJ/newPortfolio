@@ -1,9 +1,14 @@
 import React from 'react';
+import Title from "../component/title";
+import Next from "../component/next";
 
 const ABOUT = () => {
-    return(
+    return (
         <>
-            <h1>ABOUT</h1>
+            <Title p="ABOUT">
+                <strong>Front-End<br/>Developer</strong>
+            </Title>
+            <Next name="Project" link="/project"/>
         </>
     );
 };

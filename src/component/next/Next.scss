@@ -1,0 +1,32 @@
+@mixin textShadow {
+  color: #000;
+  text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
+  transition: color .2s ease-in;
+
+  &:hover {color: #fff;}
+}
+
+.next {
+  display: flex;
+  justify-content: flex-end;
+  padding-bottom: 5rem;
+  @include textShadow;
+
+  > strong {
+    font-family: 'Montserrat_SemiBold';
+    font-size: 8rem;
+    letter-spacing: 4px;
+  }
+
+  /*> i {
+    margin-left: auto;
+
+    &::after {
+      display: block;
+      content: '\e876';
+      font-family: 'Linearicons-Free';
+      font-size: 6rem;
+      @include textShadow;
+    }
+  }*/
+}

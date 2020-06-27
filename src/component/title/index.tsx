@@ -4,15 +4,17 @@ import H1 from '../h1';
 import css from './Title.scss';
 
 interface IProps {
-    p: string | JSX.Element;
-    h1: string | JSX.Element;
+    p: string;
+    children: string | JSX.Element;
 }
 
 const Title = (props: IProps) => {
-    return(
+    const {p, children} = props;
+
+    return (
         <div className={css.title}>
-            <p>{props.p}</p>
-            <H1>{props.h1}</H1>
+            <p>{p}</p>
+            <H1>{children}</H1>
         </div>
     );
 };

@@ -1,14 +1,16 @@
 import React from 'react';
 import ProjectList from '../component/projectList';
 import Title from "../component/title";
+import Next from '../component/next';
 
 const LatestWork = () => {
-    const p = 'Project';
-    const h1 = <>Latest<br/>Work</>;
-    return(
+    return (
         <>
-            <Title p={p} h1={h1}></Title>
+            <Title p="Project">
+                <strong>Latest<br/>Work</strong>
+            </Title>
             <ProjectList maxlength={3}/>
+            <Next name="About" link="/about"/>
         </>
     );
 };
