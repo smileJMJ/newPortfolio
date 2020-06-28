@@ -1,0 +1,60 @@
+@import '../../resource/css/mixin/mixin';
+
+.goList {
+  > span {@include hidden;}
+  > i {
+    margin-left: 10px;
+    transition: margin-left .3s ease-out;
+
+    &::after {
+      display: inline-block;
+      content: '\e879';
+      font-family: 'Linearicons-Free';
+      font-size: 1rem;
+      color: #fff;
+    }
+  }
+
+  &:hover > i {margin-left: 0;}
+}
+
+.visual {
+  display: flex;
+  justify-content: space-between;
+
+  > figure {
+    width: 60%;
+  }
+
+  > dl {
+    width: 38%;
+
+    ul > li {
+      margin-bottom: 3rem;
+      &:first-child {margin-top: 0;}
+
+      > dl {
+        > dt {
+          margin-bottom: 1rem;
+          font-size: 1rem;
+          font-family: 'Montserrat_Medium';
+          color: #fff;
+          text-transform: uppercase;
+        }
+        > dd {
+          font-size: 1rem;
+          color: #fff;
+          opacity: 0.7;
+        }
+      }
+    }
+  }
+}
+
+.content {
+  margin-top: 2rem;
+
+  > h1 {
+    font-size: 6rem;
+  }
+}

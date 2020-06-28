@@ -4,7 +4,7 @@ import H1 from '../h1';
 import css from './Title.scss';
 
 interface IProps {
-    p: string;
+    p: string | JSX.Element;
     children: string | JSX.Element;
 }
 

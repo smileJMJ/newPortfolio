@@ -14,7 +14,7 @@ const ListItem = (props: IProps) => {
             <dl className={css.title}>
                 <dt>
                     <strong>{data['title']}</strong>
-                    <span>{data['category']}</span>
+                    <span>{data['category'].join(', ')}</span>
                 </dt>
                 <dd className={css.term}>{data['term']}</dd>
                 <dd className={css.link}>View case <i></i></dd>

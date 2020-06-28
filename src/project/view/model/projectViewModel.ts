@@ -15,7 +15,6 @@ export default class ProjectViewModel {
         import(`../../../resource/json/${id}.json`)
             .then(module => {
                 self._projectContent = module.default;
-                console.log('content', self._projectContent);
             });
     }
 }
