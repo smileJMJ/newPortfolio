@@ -1,14 +1,19 @@
 {
   "title": "Jobflex",
   "term": "2020.03 ~ ",
-  "specs": {
-    "category": "RESPONSIVE, WEBSITE, WEBSOLUTION",
+  "info": {
+    "link": "https://www.jobflex.com/",
     "client": "마이다스아이티",
+    "role": "Front-End 개발",
     "devenv": "React, TypeScript, Mobx, Webpack",
-    "role": "Front-End 개발"
+    "category": "RESPONSIVE, WEBSITE, WEBSOLUTION"
   },
   "visual": "<img src='/resource/img/test.jpg' alt=''/>",
   "introduce": "<p>소개글입니다.</p>",
   "result": "<div>결과 내용입니다.</div>",
-  "experience": "<div>느낀점을 이러합니다.</div>"
+  "experience": "<div>느낀점을 이러합니다.</div>",
+  "next": {
+    "name": "inAIR 유지보수 / 구축",
+    "link": "/inair"
+  }
 }

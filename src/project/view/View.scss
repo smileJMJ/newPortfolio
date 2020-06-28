@@ -36,15 +36,18 @@
       > dl {
         > dt {
           margin-bottom: 1rem;
-          font-size: 1rem;
+          font-size: 1.05rem;
           font-family: 'Montserrat_Medium';
           color: #fff;
           text-transform: uppercase;
         }
-        > dd {
-          font-size: 1rem;
+        > dd, > dd > a {
+          font-size: 1.05rem;
           color: #fff;
           opacity: 0.7;
+          transition: opacity .2s ease-out;
+
+          &:hover {opacity: 1;}
         }
       }
     }

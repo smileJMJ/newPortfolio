@@ -1,3 +1,20 @@
+$bgColor: ("dark": #000, "bright": #fff);
+$color: ("dark": #fff, "bright": #0e1319);
+$thumbBgColor: ("dark": #1f1f1f, "bright": #e2c7c0);
+
+/*  Theme Color   */
+/*$darkBgColor: map-get($bgColor, "dark");
+$brightBgColor: map-get($bgColor, "bright");
+$darkColor: map-get($color, "dark");
+$brightColor: map-get($color, "bright");
+$darkThumbBgColor: map-get($thumbBgColor, "dark");
+$brightThumbBgColor: map-get($thumbBgColor, "bright");*/
+
+@function themeColor($colorType, $theme) {
+  @return map-get($colorType, $theme);
+}
+
+
 @mixin webPadding {
   padding: 0 8%;
 }

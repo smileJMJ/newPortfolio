@@ -3,7 +3,7 @@ import css from './TitleBorderBottom.scss';
 
 interface IProps {
     title: string;
-    children: string | JSX.Element;
+    children: string | React.ReactNode;
 }
 
 const TitleBorderBottom = (props: IProps) => {

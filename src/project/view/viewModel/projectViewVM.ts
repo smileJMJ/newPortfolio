@@ -1,6 +1,6 @@
-import {action, observable} from "mobx";
+import {action} from "mobx";
 import ProjectViewModel from "../model/projectViewModel";
-import {IProjectContent} from "../../../types";
+import {IProjectContent} from "../types";
 
 export default class ProjectViewVM {
     private _projectViewModel: ProjectViewModel;

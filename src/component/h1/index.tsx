@@ -2,7 +2,7 @@ import React from 'react';
 import css from './H1.scss'
 
 interface IProps {
-    children: string | JSX.Element;
+    children: string | React.ReactNode;
 }
 const H1 = (props: IProps) => {
     return(

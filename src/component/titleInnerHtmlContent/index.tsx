@@ -3,8 +3,8 @@ import H1 from "../h1";
 import css from './TitleInnerHtmlContent.scss';
 
 interface IProps {
-    h1: string | JSX.Element;
-    content: string | JSX.Element;
+    h1: string | React.ReactNode;
+    content: string | React.ReactNode;
 }
 
 const TitleInnerHtmlContent = (props: IProps) => {

@@ -1,24 +1,23 @@
-export interface IProjectListItem {
-    title: string;
-    term: string;
-    category: string[];
-    url: string;
-    thumbnail: string;
-}
-
-export interface ISpecs {
+export interface IInfo {
     category: string;
     client?: string;
     devenv: string;
     role: string;
 }
 
+export interface INext {
+    name: string;
+    link: string;
+}
+
 export interface IProjectContent {
     title: string;
     term: string;
     visual: string;
-    specs: ISpecs;
+    info: IInfo;
+    link?: string;
     introduce?: string;
     result?: string;
     experience?: string;
+    next?: INext;
 }

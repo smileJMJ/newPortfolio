@@ -1,5 +1,5 @@
 import {action, observable} from "mobx";
-import {IProjectContent} from "../../../types";
+import {IProjectContent} from "../types";
 
 
 export default class ProjectViewModel {

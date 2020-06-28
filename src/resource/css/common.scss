@@ -5,7 +5,9 @@
 body {
     font-family: 'Montserrat', 'NanumSquare', 'NotoSanskr_Regular', 'Gothic', sans-serif;
     color: #333;
-    background: #000;
+    background: themeColor($bgColor, "dark");
+
+    :global &.bright {background: themeColor($bgColor, "bright");}
 }
 
 :global #root {

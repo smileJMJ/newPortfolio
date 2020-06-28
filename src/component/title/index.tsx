@@ -4,8 +4,8 @@ import H1 from '../h1';
 import css from './Title.scss';
 
 interface IProps {
-    p: string | JSX.Element;
-    children: string | JSX.Element;
+    p: string | React.ReactNode;
+    children: string | React.ReactNode;
 }
 
 const Title = (props: IProps) => {

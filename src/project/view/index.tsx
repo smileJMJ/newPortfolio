@@ -5,24 +5,26 @@ import ProjectViewVM from './viewModel/projectViewVM';
 import Title from "../../component/title";
 import TitleBorderBottom from "../../component/titleBorderBottom";
 import TitleInnerHtmlContent from '../../component/titleInnerHtmlContent';
-import {ISpecs} from "../../types";
+import {IInfo} from "./types";
 
 import css from './View.scss';
+import Next from "../../component/next";
 
-interface ISpecItem {
-    specs: ISpecs;
+interface IInfoItem {
+    info: IInfo;
 }
 
 const projectViewVM = new ProjectViewVM();
 
-const SpecItem = (props: ISpecItem) => {
-    let {specs} = props;
+const InfoItem = (props: IInfoItem) => {
+    let {info} = props;
     let element = [];
 
-    for(let key in specs) {
+    for(let key in info) {
+        const val = info[key];
         element.push(<li key={key}><dl>
                 <dt>{key}</dt>
-                <dd>{specs[key]}</dd>
+            <dd>{ key === 'link' ? <a href={val} target="_blank">{val}</a> : val}</dd>
             </dl></li>);
     }
     
@@ -32,7 +34,7 @@ const SpecItem = (props: ISpecItem) => {
 const View = observer((props: any) => {
     const id = props.match.params.id;
     const {projectContent} = projectViewVM;
-    const {title, specs, visual, introduce, result, experience} = projectContent;
+    const {title, info, visual, introduce, result, experience, next} = projectContent;
 
     const goList = <Link to="/project" className={css.goList}><span>목록으로</span><i></i></Link>;
 
@@ -47,13 +49,14 @@ const View = observer((props: any) => {
                     <Title p={goList}>{title}</Title>
                     <section className={css.visual}>
                         <figure><img src={visual} alt=""/></figure>
-                        <TitleBorderBottom title="SPECS">
-                            <ul><SpecItem specs={specs}/></ul>
+                        <TitleBorderBottom title="INFO">
+                            <ul><InfoItem info={info}/></ul>
                         </TitleBorderBottom>
                     </section>
                     { introduce && <TitleInnerHtmlContent h1="INTRODUCE" content={introduce} /> }
                     { result && <TitleInnerHtmlContent h1="RESULT" content={result} /> }
                     { experience && <TitleInnerHtmlContent h1="EXPERIENCE" content={experience} /> }
+                    { next && <Next name={next.name} link={next.link}/> }
                 </>
             }
         </>

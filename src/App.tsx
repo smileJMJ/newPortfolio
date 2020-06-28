@@ -1,5 +1,6 @@
 import React from 'react';
 import {BrowserRouter, Route, Switch} from 'react-router-dom';
+import ScrollToTop from "./component/scrollToTop";
 import About from './about';
 import ProjectList from './project/list';
 import ProjectView from './project/view';
@@ -12,6 +13,7 @@ import Footer from "./component/footer";
 const App = () => {
     return(
         <BrowserRouter>
+            <ScrollToTop/>
             <Header/>
             <div id="container">
                 <Switch>
