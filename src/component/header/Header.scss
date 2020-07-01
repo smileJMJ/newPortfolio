@@ -18,6 +18,8 @@
       > .hidden {
         @include hidden;
       }
+
+      body[data-theme="bright"] & {background-image: url('./mjBlack.svg');}
     }
   }
 
