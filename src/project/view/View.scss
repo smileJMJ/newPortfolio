@@ -1,5 +1,8 @@
 @import '../../resource/css/mixin/mixin';
 
+$dark: themeColor($color, "dark");
+$bright: themeColor($color, "bright");
+
 .goList {
   > span {@include hidden;}
   > i {
@@ -11,7 +14,9 @@
       content: '\e879';
       font-family: 'Linearicons-Free';
       font-size: 1rem;
-      color: #fff;
+      color: $dark;
+
+      body[data-theme="bright"] & {color: $bright;}
     }
   }
 
@@ -21,6 +26,7 @@
 .visual {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 10rem;
 
   > figure {
     width: 60%;
@@ -38,16 +44,20 @@
           margin-bottom: 1rem;
           font-size: 1.05rem;
           font-family: 'Montserrat_Medium';
-          color: #fff;
+          color: $dark;
           text-transform: uppercase;
+
+          body[data-theme="bright"] & {color: $bright;}
         }
         > dd, > dd > a {
           font-size: 1.05rem;
-          color: #fff;
+          color: $dark;
           opacity: 0.7;
           transition: opacity .2s ease-out;
 
           &:hover {opacity: 1;}
+
+          body[data-theme="bright"] & {color: $bright;}
         }
       }
     }

@@ -1,3 +1,5 @@
+@import '../../../resource/css/mixin/mixin';
+
 .listItem {
   display: flex;
   width: 100%;
@@ -10,8 +12,13 @@
     position: relative;
     width: 30%;
     margin-right: 5%;
-    color: #fff;
-    border-bottom: 1px solid #fff;
+    color: themeColor($color, "dark");
+    border-bottom: 1px solid themeColor($color, "dark");
+
+    body[data-theme="bright"] & {
+      color: themeColor($color, "bright");
+      border-bottom-color: themeColor($color, "bright");
+    }
 
     > dt {
       width: 100%;
@@ -53,8 +60,10 @@
           content: '\e876';
           font-family: 'Linearicons-Free';
           font-size: 1rem;
-          color: #fff;
+          color: themeColor($color, "dark");
           vertical-align: bottom;
+
+          body[data-theme="bright"] & {color: themeColor($color, "bright");}
         }
       }
     }
@@ -65,6 +74,8 @@
     width: 65%;
     height: 40vw;
     max-height: 640px;
-    background: #333;
+    background: themeColor($thumbBgColor, "dark");
+
+    body[data-theme="bright"] & {background: themeColor($thumbBgColor, "bright");}
   }
 }

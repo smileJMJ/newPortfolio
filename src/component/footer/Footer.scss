@@ -14,9 +14,10 @@
         > dd {
           height: 10rem;
           font-size: 1rem;
-          color: #fff;
+          color: themeColor($color, "dark");
 
           &.copyright {opacity: 0.6;}
+          body[data-theme="bright"] & {color: themeColor($color, "bright");}
 
           > ul {
             overflow: hidden;
@@ -39,11 +40,15 @@
                 content: '\e818';
                 font-family: 'Linearicons-Free';
                 font-size: 2rem;
-                color: #fff;
+                color: themeColor($color, "dark");
+
+                body[data-theme="bright"] & {color: themeColor($color, "bright");}
               }
               &.github i {
                 width: 2.1rem;
                 background: url('./githubWhite.svg') no-repeat left top;
+
+                body[data-theme="bright"] & {background-image: url('./githubBlack.svg');}
               }
             }
           }

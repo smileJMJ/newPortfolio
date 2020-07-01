@@ -18,7 +18,7 @@ const Header = () => {
     const changeTheme = (e) => {
         e.preventDefault();
         const theme = e.target.getAttribute('data-type');
-        document.getElementsByTagName('body')[0].className = theme;
+        document.getElementsByTagName('body')[0].setAttribute('data-theme', theme);
     };
 
     return(

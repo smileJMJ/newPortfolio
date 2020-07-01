@@ -1,6 +1,10 @@
+@import '../../resource/css/mixin/mixin';
+
 .h1 {
   font-family: 'Montserrat_Bold', 'NanumSquareEB';
   font-size: 8rem;
-  color: #fff;
+  color: themeColor($color, "dark");
   letter-spacing: 0.3rem;
+
+  body[data-theme="bright"] & {color: themeColor($color, "bright");}
 }

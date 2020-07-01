@@ -7,7 +7,7 @@ body {
     color: #333;
     background: themeColor($bgColor, "dark");
 
-    :global &.bright {background: themeColor($bgColor, "bright");}
+    &[data-theme="bright"] {background: themeColor($bgColor, "bright");}
 }
 
 :global #root {

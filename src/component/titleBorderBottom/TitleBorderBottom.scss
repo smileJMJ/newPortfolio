@@ -1,12 +1,18 @@
+@import '../../resource/css/mixin/mixin';
+
 .titleBorderBottom {
   > dt {
     margin-bottom: 5rem;
     font-family: 'Montserrat_Medium', 'NanumSquare';
     font-size: 1rem;
-    color: #fff;
+    color: themeColor($color, "dark");
     letter-spacing: 2px;
+
+    body[data-theme="bright"] & {color: themeColor($color, "bright");}
   }
   > dd {
-    border-bottom: 1px solid rgba(255,255,255,0.6);
+    border-bottom: 1px solid themeColor($color, "dark");
+
+    body[data-theme="bright"] & {border-bottom-color: themeColor($color, "bright");}
   }
 }

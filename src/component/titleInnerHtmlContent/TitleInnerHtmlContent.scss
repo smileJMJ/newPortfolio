@@ -1,5 +1,7 @@
+@import '../../resource/css/mixin/mixin';
+
 .titleInnerHtmlContent {
-  margin-top: 10rem;
+  margin-bottom: 10rem;
 
   > h1 {
     margin-bottom: 6.5rem;
@@ -7,7 +9,9 @@
   }
   > div {
     font-size: 1.15rem;
-    color: #fff;
+    color: themeColor($color, "dark");
     line-height: 1.5;
+
+    body[data-theme="bright"] & {color: themeColor($color, "bright");}
   }
 }

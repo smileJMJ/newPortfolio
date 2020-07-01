@@ -47,8 +47,8 @@
             border-bottom: 1px solid themeColor($color, "dark");
           }
 
-          /*:global body.bright & {color: themeColor($color, "bright");}
-          :global body.bright &.active {border-bottom: 1px solid themeColor($color, "bright");}*/
+          body[data-theme="bright"] & {color: themeColor($color, "bright");}
+          body[data-theme="bright"] &.active {border-bottom: 1px solid themeColor($color, "bright");}
         }
       }
     }

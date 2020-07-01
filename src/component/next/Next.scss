@@ -1,9 +1,21 @@
+@import '../../resource/css/mixin/mixin';
+
 @mixin textShadow {
-  color: #000;
-  text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
+  $dark: themeColor($color, "dark");
+  $bright: themeColor($color, "bright");
+
+  color: themeColor($bgColor, "dark");
+  text-shadow: -1px -1px 0 $dark, 1px -1px 0 $dark, -1px 1px 0 $dark, 1px 1px 0 $dark;
   transition: color .2s ease-in;
 
-  &:hover {color: #fff;}
+  &:hover {color: $dark;}
+
+  body[data-theme="bright"] & {
+    color: themeColor($bgColor, "bright");
+    text-shadow: -1px -1px 0 $bright, 1px -1px 0 $bright, -1px 1px 0 $bright, 1px 1px 0 $bright;
+
+    &:hover {color: $bright;}
+  }
 }
 
 .next {
