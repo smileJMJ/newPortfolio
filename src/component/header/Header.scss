@@ -46,12 +46,42 @@
           &:hover {opacity: 0.8;}
           &.active {
             opacity: 1;
-            border-bottom: 1px solid themeColor($color, "dark");
+            /*border-bottom: 1px solid themeColor($color, "dark");*/
           }
 
           body[data-theme="bright"] & {color: themeColor($color, "bright");}
-          body[data-theme="bright"] &.active {border-bottom: 1px solid themeColor($color, "bright");}
+          /*body[data-theme="bright"] &.active {border-bottom: 1px solid themeColor($color, "bright");}*/
         }
+      }
+    }
+  }
+
+  > .btnArea {
+    margin-left: 20px;
+
+    > li {
+      display: inline-block;
+      margin-left: 20px;
+
+      > button {
+        color: themeColor($color, "dark");
+        opacity: 0.6;
+        transition: all .2s ease-out;
+
+        &:hover {opacity: 0.8;}
+
+        &::after {
+          display: inline-block;
+          font-family: 'Linearicons-Free';
+          font-size: 1.4rem;
+          vertical-align: middle;
+        }
+        &.btnDark::after {content: '\e808';}
+        &.btnBright::after {content: '\e807';}
+
+        body[data-theme="dark"] &.btnDark {color: #f1de00;}
+        body[data-theme="bright"] & {color: themeColor($color, "bright");}
+        body[data-theme="bright"] &.btnBright {color: #fa0e19;}
       }
     }
   }

@@ -13,12 +13,17 @@ const Header = () => {
 
     useEffect(() => {
         setGnbData(GnbData);
+        changeTheme('dark');
     }, [gnbData]);
 
-    const changeTheme = (e) => {
+    const changeTheme = (theme: string) => {
+        document.getElementsByTagName('body')[0].setAttribute('data-theme', theme);
+    };
+
+    const handleClick = (e) => {
         e.preventDefault();
         const theme = e.target.getAttribute('data-type');
-        document.getElementsByTagName('body')[0].setAttribute('data-theme', theme);
+        changeTheme(theme);
     };
 
     return(
@@ -34,9 +39,9 @@ const Header = () => {
                     }
                 </ul>
             </nav>
-            <ul>
-                <li><button type="button" onClick={changeTheme} data-type="dark" style={{color: '#ff0000'}}>DARK</button></li>
-                <li><button type="button" onClick={changeTheme} data-type="bright" style={{color: '#ff0000'}}>BRIGHT</button></li>
+            <ul className={css.btnArea}>
+                <li><button type="button" className={css.btnDark} onClick={handleClick} data-type="dark" title="DARK"></button></li>
+                <li><button type="button" className={css.btnBright} onClick={handleClick} data-type="bright" title="BRIGHT"></button></li>
             </ul>
         </header>
     )
