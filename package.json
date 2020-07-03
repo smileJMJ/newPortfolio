@@ -6,9 +6,9 @@
   "scripts": {
     "start": "webpack-dev-server --progress --config ./webpack/dev.js --mode development",
     "build": "webpack --progress --config ./webpack/prod.js --mode production",
-    "test": "echo \"Error: no test specified\" && exit 1",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "test": "jest"
   },
   "repository": {
     "type": "git",
@@ -20,6 +20,12 @@
     "url": "https://github.com/smileJMJ/newPortfolio/issues"
   },
   "homepage": "https://github.com/smileJMJ/newPortfolio#readme",
+  "jest": {
+    "moduleNameMapper": {
+      "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/src/__mocks__/fileMock.js",
+      "\\.(css|scss)$": "identity-obj-proxy"
+    }
+  },
   "dependencies": {
     "core-js": "^3.6.5",
     "gsap": "^3.3.4",
@@ -35,13 +41,13 @@
     "@babel/plugin-proposal-object-rest-spread": "^7.10.1",
     "@babel/plugin-transform-arrow-functions": "^7.10.1",
     "@babel/preset-env": "^7.10.1",
-    "@babel/preset-react": "^7.10.1",
     "@babel/preset-typescript": "^7.10.1",
     "@storybook/addon-actions": "^5.3.19",
     "@storybook/addon-links": "^5.3.19",
     "@storybook/addons": "^5.3.19",
     "@storybook/react": "^5.3.19",
     "@types/gsap": "^1.20.2",
+    "@types/jest": "^26.0.3",
     "@types/react": "^16.9.35",
     "@types/react-dom": "^16.9.8",
     "@types/react-router-dom": "^5.1.5",
@@ -50,9 +56,12 @@
     "css-loader": "^3.5.3",
     "file-loader": "^6.0.0",
     "html-webpack-plugin": "^4.3.0",
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^26.1.0",
     "mini-css-extract-plugin": "^0.9.0",
     "node-sass": "^4.14.1",
     "react-router-dom": "^5.2.0",
+    "react-test-renderer": "^16.13.1",
     "sass-loader": "^8.0.2",
     "style-loader": "^1.2.1",
     "terser-webpack-plugin": "^3.0.2",
