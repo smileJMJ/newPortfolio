@@ -4,20 +4,20 @@
     "term": "2020.03 ~",
     "category": ["WEBSITE", "WEB SOLUTION"],
     "url": "/project/jobflex",
-    "thumbnail": "/resource/img/thumbJobflex.png"
+    "thumbnail": ["/resource/img/thumbJobflex.png", "/resource/img/thumbJobflex2.png", "/resource/img/thumbJobflex3.png"]
   },
   {
     "title": "inAIR 구축/유지보수",
     "term": "2019.06 ~",
     "category": ["WEB SOLUTION"],
     "url": "/project/inair",
-    "thumbnail": "/resource/img/thumbInair.png"
+    "thumbnail": ["/resource/img/thumbInair.png", "/resource/img/thumbInair.png", "/resource/img/thumbInair.png"]
   },
   {
     "title": "inTASK 리팩토링",
     "term": "2019.09",
     "category": ["WEB SOLUTION"],
     "url": "/project/intask",
-    "thumbnail": "/resource/img/thumbIntask.png"
+    "thumbnail": ["/resource/img/thumbIntask.png", "/resource/img/thumbIntask.png", "/resource/img/thumbIntask.png"]
   }
 ]

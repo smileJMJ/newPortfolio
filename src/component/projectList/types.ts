@@ -3,5 +3,5 @@ export interface IProjectListItem {
     term: string;
     category: string[];
     url: string;
-    thumbnail: string;
+    thumbnail: string[];
 }

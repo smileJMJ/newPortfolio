@@ -20,7 +20,9 @@ const ListItem = (props: IProps) => {
                 <dd className={css.link}>View case <i></i></dd>
             </dl>
             <figure className={css.thumb}>
-                <img src={data['thumbnail']} alt=""/>
+                {
+                    data['thumbnail'] && data['thumbnail'].map((v, i) => <img key={v+i} src={v} alt=""/>)
+                }
             </figure>
         </Link>
     );

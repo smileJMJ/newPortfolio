@@ -12,31 +12,6 @@ module.exports = (mode) => {
             style: './src/resource/css/common.scss',
             app: './src/index.tsx'
         },
-        output: {
-            filename: '[name].[hash].js',
-            path: path.resolve(__dirname, '../dist'),
-            publicPath: '/'
-        },
-        optimization: {
-            minimize: isDevMode ? false : true, // production mode일 땐 webpack에서 TerserPlugin 자동 실행함!
-            minimizer: [
-                new TerserPlugin({
-                    cache: true,
-                    parallel: true,
-                    sourceMap: true
-                })
-            ],
-            splitChunks: {
-                cacheGroups: {
-                    style: {
-                        name: 'bundle',
-                        test: /\.s[ac]ss$/,
-                        chunks: 'all',
-                        enforce: true,
-                    }
-                }
-            }
-        },
         plugins: [
             new CleanWebpackPlugin(),
             new MiniCssExtractPlugin({
@@ -82,11 +57,11 @@ module.exports = (mode) => {
                     test: /\.(ico|png|jpe?g|gif|svg)$/,
                     loader: 'url-loader',
                     options: {
-                        limit: 10000,
+                        limit: 5000,
                         fallback: {
                             loader: 'file-loader',
                             options: {
-                                name: '[name].[contenthash].[ext]',
+                                name: '[name].[ext]',
                                 outputPath: './resource/img',
                                 publicPath: '/resource/img'
                             }
