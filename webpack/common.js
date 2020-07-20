@@ -91,6 +91,26 @@ module.exports = (mode) => {
         resolve: {
             modules: ['node_modules'],
             extensions: ['.js', '.ts', '.tsx', '.css', '.scss', 'json']
-        }
+        },
+        optimization: {
+            minimize: isDevMode ? false : true, // production mode일 땐 webpack에서 TerserPlugin 자동 실행함!
+            minimizer: [
+                new TerserPlugin({
+                    cache: true,
+                    parallel: true,
+                    sourceMap: true
+                })
+            ],
+            splitChunks: {
+                cacheGroups: {
+                    style: {
+                        name: 'bundle',
+                        test: /\.s[ac]ss$/,
+                        chunks: 'all',
+                        enforce: true,
+                    }
+                }
+            }
+        },
     };
 };
