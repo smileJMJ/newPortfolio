@@ -3,6 +3,7 @@ const TerserPlugin = require('terser-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const CopyPlugin = require('copy-webpack-plugin');
 
 module.exports = (mode) => {
     const isDevMode = mode !== 'production';
@@ -20,6 +21,9 @@ module.exports = (mode) => {
             }),
             new HtmlWebpackPlugin({
                 template: './src/index.html'
+            }),
+            new CopyPlugin({
+                patterns: [{from: './src/resource', to: 'resource'}]
             })
         ],
         module: {
@@ -61,7 +65,7 @@ module.exports = (mode) => {
                         fallback: {
                             loader: 'file-loader',
                             options: {
-                                name: '[name].[ext]',
+                                name: '[name].[contenthash].[ext]',
                                 outputPath: './resource/img',
                                 publicPath: '/resource/img'
                             }
