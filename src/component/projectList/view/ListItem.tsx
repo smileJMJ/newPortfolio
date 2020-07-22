@@ -19,11 +19,13 @@ const ListItem = (props: IProps) => {
                 <dd className={css.term}>{data['term']}</dd>
                 <dd className={css.link}>View case <i></i></dd>
             </dl>
-            <figure className={css.thumb}>
-                {
-                    data['thumbnail'] && data['thumbnail'].map((v, i) => <img key={v+i} src={v} alt=""/>)
-                }
-            </figure>
+            <div className={css.thumb}>
+                <figure>
+                    {
+                        data['thumbnail'] && data['thumbnail'].map((v, i) => <img key={v+i} src={v} alt=""/>)
+                    }
+                </figure>
+            </div>
         </Link>
     );
 };

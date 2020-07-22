@@ -77,5 +77,15 @@
     background: themeColor($thumbBgColor, "dark");
 
     body[data-theme="bright"] & {background: themeColor($thumbBgColor, "bright");}
+
+    > figure {
+      position: relative;
+      max-width: 60%;
+
+      > img {
+        position: absolute;
+        width: 100%;
+      }
+    }
   }
 }
