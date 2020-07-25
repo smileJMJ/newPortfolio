@@ -10,6 +10,7 @@ module.exports = (mode) => {
 
     return {
         entry: {
+            polyfill: '@babel/polyfill',
             style: './src/resource/css/common.scss',
             app: './src/index.tsx'
         },

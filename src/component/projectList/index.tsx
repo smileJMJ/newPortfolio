@@ -1,6 +1,6 @@
 import React from 'react';
 import {observer} from "mobx-react";
-import projectListVM from "./viewModel/ProjectListVM";
+import ProjectListStore from "./store/ProjectListStore";
 import ListItem from './view/ListItem';
 
 interface IProps {
@@ -8,19 +8,14 @@ interface IProps {
 }
 
 const List = observer((props: IProps) => {
-    let {projectList} = projectListVM;
+    const {projectList} = ProjectListStore;
     const {maxlength} = props;
-    if(maxlength) projectList = projectList.slice(0, maxlength);
+    let data = projectList;
 
-    return(
-        <ul>
-            {
-                projectList.map((v, i) => <li key={i}>
-                    <ListItem data={v}/>
-                </li>)
-            }
-        </ul>
-    );
+    if(maxlength) data = projectList.slice(0, maxlength); // 노출개수 제한 있을 때
+    const listItem = data.map(v => <li key={v.title}><ListItem data={v}/></li>);
+
+    return <ul>{listItem}</ul>;
 });
 
 export default List;

@@ -3,6 +3,7 @@ export interface IInfo {
     client?: string;
     devenv: string;
     role: string;
+    link?: string;
 }
 
 export interface INext {
@@ -10,12 +11,11 @@ export interface INext {
     link: string;
 }
 
-export interface IProjectContent {
+export interface IProjectDetailRs {
     title: string;
     term: string;
     visual: string;
     info: IInfo;
-    link?: string;
     introduce?: string;
     result?: string;
     experience?: string;

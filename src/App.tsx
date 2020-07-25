@@ -3,7 +3,7 @@ import {BrowserRouter, Route, Switch} from 'react-router-dom';
 import ScrollToTop from "./component/scrollToTop";
 import About from './about';
 import ProjectList from './project/list';
-import ProjectView from './project/view';
+import ProjectDetail from './project/detail';
 import Contact from './contact';
 import Main from './main';
 import Error from './error';
@@ -19,7 +19,7 @@ const App = () => {
                 <Switch>
                     <Route exact path="/about" component={About}/>
                     <Route exact path="/project" component={ProjectList}/>
-                    <Route exact path="/project/:id" component={ProjectView}/>
+                    <Route exact path="/project/detail/:id" component={ProjectDetail}/>
                     <Route exact path="/contact" component={Contact}/>
                     <Route exact path="/" component={Main}/>
                     <Route component={Error}/>

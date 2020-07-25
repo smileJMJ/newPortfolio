@@ -81,10 +81,20 @@
     > figure {
       position: relative;
       max-width: 60%;
+      height: 100%;
+      margin: 0 auto;
 
       > img {
         position: absolute;
         width: 100%;
+      }
+
+      &[data-type="right"] {
+        > img {
+          &:nth-child(1) {right: -20%; bottom: -10%;}
+          &:nth-child(2) {right: -10%; bottom: 11%;}
+          &:nth-child(3) {right: 7%; bottom: 22%;}
+        }
       }
     }
   }

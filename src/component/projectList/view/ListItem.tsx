@@ -1,6 +1,6 @@
 import React from 'react';
 import {Link} from "react-router-dom";
-import {IProjectListItem} from "../types";
+import {IProjectListItem} from "../type";
 import css from './ListItem.scss';
 
 interface IProps {
@@ -9,6 +9,8 @@ interface IProps {
 
 const ListItem = (props: IProps) => {
     const {data} = props;
+    const thumbnail = data['thumbnail'] && data['thumbnail'].map((v, i) => <img key={v+i} src={v} alt=""/>);
+
     return(
         <Link to={data['url']} className={css.listItem}>
             <dl className={css.title}>
@@ -20,11 +22,7 @@ const ListItem = (props: IProps) => {
                 <dd className={css.link}>View case <i></i></dd>
             </dl>
             <div className={css.thumb}>
-                <figure>
-                    {
-                        data['thumbnail'] && data['thumbnail'].map((v, i) => <img key={v+i} src={v} alt=""/>)
-                    }
-                </figure>
+                <figure data-type={data['thumbnailType']}>{thumbnail}</figure>
             </div>
         </Link>
     );
