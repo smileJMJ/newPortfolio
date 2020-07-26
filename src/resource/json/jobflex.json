@@ -8,7 +8,8 @@
     "devenv": "React, TypeScript, Mobx, Webpack",
     "category": "RESPONSIVE, WEBSITE, WEBSOLUTION"
   },
-  "visual": "/resource/img/thumbJobflex.png",
+  "thumbnailType": "right",
+  "thumbnail": ["/resource/img/thumbJobflex.png", "/resource/img/thumbJobflex2.png", "/resource/img/thumbJobflex3.png"],
   "introduce": "<p>소개글입니다.</p>",
   "result": "<div>결과 내용입니다.</div>",
   "experience": "<div>느낀점을 이러합니다.</div>",

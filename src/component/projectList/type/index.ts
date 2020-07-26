@@ -1,11 +1,10 @@
-export enum EThumbnailType { left = "left", right = "right" }
-export interface IProjectListItem {
+import {IThumbnail} from "../../thumbnail/type";
+
+export interface IProjectListItem extends IThumbnail{
     title: string;
     term: string;
     category: string[];
     url: string;
-    thumbnailType: EThumbnailType;
-    thumbnail: string[];
 }
 export interface IProjectListRs {
     list: IProjectListItem[];

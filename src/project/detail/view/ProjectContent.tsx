@@ -4,17 +4,19 @@ import {IProjectDetailRs} from "../type";
 import Title from "../../../component/title";
 import TitleBorderBottom from "../../../component/titleBorderBottom";
 import TitleInnerHtmlContent from "../../../component/titleInnerHtmlContent";
+import InfoItem from "./InfoItem";
+import Thumbnail from "../../../component/thumbnail";
 import Next from "../../../component/next";
 
 import css from "../Detail.scss";
-import InfoItem from "./InfoItem";
+
 
 interface IProps {
     data: IProjectDetailRs;
 }
 
 const ProjectContent = (props: IProps) => {
-    const {title, info, visual, introduce, result, experience, next} = props.data;
+    const {title, info, thumbnailType, thumbnail, introduce, result, experience, next} = props.data;
     const goList = <Link to="/project" className={css.goList}><span>목록으로</span><i></i></Link>;
 
     if(props) {
@@ -22,7 +24,9 @@ const ProjectContent = (props: IProps) => {
             <>
                 <Title p={goList}>{title}</Title>
                 <section className={css.visual}>
-                    <figure><img src={visual} alt=""/></figure>
+                    <div className={css.thumb}>
+                        <Thumbnail thumbnailType={thumbnailType} thumbnail={thumbnail}/>
+                    </div>
                     <TitleBorderBottom title="INFO">
                         <InfoItem data={info}/>
                     </TitleBorderBottom>

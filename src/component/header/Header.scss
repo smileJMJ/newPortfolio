@@ -61,11 +61,11 @@
 
     > li {
       display: inline-block;
-      margin-left: 20px;
+      margin-left: 15px;
 
       > button {
         color: themeColor($color, "dark");
-        opacity: 0.6;
+        opacity: 0.5;
         transition: all .2s ease-out;
 
         &:hover {opacity: 0.8;}
@@ -76,12 +76,15 @@
           font-size: 1.4rem;
           vertical-align: middle;
         }
-        &.btnDark::after {content: '\e808';}
+        &.btnDark::after {
+          content: '\e808';
+          font-size: 1.3rem;
+        }
         &.btnBright::after {content: '\e807';}
 
-        body[data-theme="dark"] &.btnDark {color: #f1de00;}
+        body[data-theme="dark"] &.btnDark {opacity: 1;}
         body[data-theme="bright"] & {color: themeColor($color, "bright");}
-        body[data-theme="bright"] &.btnBright {color: #fa0e19;}
+        body[data-theme="bright"] &.btnBright {opacity: 1;}
       }
     }
   }

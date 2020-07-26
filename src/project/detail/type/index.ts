@@ -1,3 +1,5 @@
+import {IThumbnail} from "../../../component/thumbnail/type";
+
 export interface IInfo {
     category: string;
     client?: string;
@@ -11,10 +13,9 @@ export interface INext {
     link: string;
 }
 
-export interface IProjectDetailRs {
+export interface IProjectDetailRs extends IThumbnail {
     title: string;
     term: string;
-    visual: string;
     info: IInfo;
     introduce?: string;
     result?: string;
