@@ -1,23 +1,91 @@
-interface IOption {
-    eleRef: HTMLDivElement;
-    letter: string;
-    letterTime: number;												// 문자열 각각 모션 속도
-    letterDelay: number;											// 문자열 모션 delay
-    startDelay: number;												// 문자열 시작 모션 delay
-    eraseDelay: number;														// 지워질 때 delay
-    cursorEnd: boolean;									// 커서 표시 여부
-    infinite: boolean;									// 무한 반복
-    slice: boolean;										// slice 사용 여부
-    sliceLetter: string;									// slice할 텍스트는 #로 표시
-    sliceInsertLetter: [];						// slice 된 영역에 추가될 텍스트
-}
+import {action, observable} from "mobx";
 
-export default class Typing {
-    private _option: Map<string, IOption[]>;
+const defaultOption = {
+    eleRef: null,
+    letter: ["테스트입니다."],
+    letterTime: 0,
+    letterDelay: 0,
+    startDelay: 0,
+    eraseDelay: 0,
+    cursorEnd: true,
+    infinite: false,
+    slice: false,
+    sliceLetter: "",
+    sliceInsertLetter: []
+};
+
+class TypingStore {
+    private _option: Map<string, IOption> = new Map<string, IOption>();
+    @observable private _resultArr: string[] = [];
+    @observable private _curIdx: number = 0;
     
     constructor(opt: IOption) {
+        const self = this;
 
+        if(!opt) opt = defaultOption;
+        for(let key in opt) {
+            self.setOption(key, opt[key]);
+        }
+
+        const letter = this._option.get('letter');
+        this.makeArrLang(letter[this._curIdx]);
     }
+
+    get option(): Map<string, IOption> {
+        return this._option;
+    }
+
+    setOption(key: string, value: IOption) {
+        this._option.set(key, value);
+    }
+
+    get resultArr(): string[] {
+        return this._resultArr;
+    }
+    get curIdx(): number {
+        return this._curIdx;
+    }
+
+    @action
+    setCurIdx(value: number) {
+        this._curIdx = value;
+    }
+
+    // 문자열 배열 전환 및 언어 체크
+    @action
+    makeArrLang(letter: string) {
+        this._resultArr = this.makeArrLangFunc(letter);
+    }
+
+    // 문자열 파싱 및 언어 감별
+    makeArrLangFunc(letter: string) {
+        const str = letter;
+        const length = str.length;
+        const strArr: string[] = [];
+
+        for(let i=0; i<length; i++){
+            strArr[i] = str.substr(i, 1);
+        }
+
+        return strArr;
+    }
+
+    // 마크업 구조 생성
+    /*makeMarkup() {
+        const option = this._option;
+        const $ele = option.get('eleRef');
+        const cursorBool = option.get('cursorEnd');
+        const strArr = this._resultArr;
+        let html = "";
+        const letterStr = strArr.map(v => <span className='letter'>{v}</span>);
+
+        html = `<div class='typing_area'>${letterStr}</div>`;
+
+        $ele.html(html);
+       // this.typingMotionControl();
+    }*/
+
+
 }
 
 /*
@@ -373,3 +441,5 @@ var KM = (function(){
         return setting;
     };
 })();*/
+
+export default TypingStore;
