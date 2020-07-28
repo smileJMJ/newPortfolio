@@ -19,6 +19,14 @@
       width: 100%;
     }
 
+    &[data-type="left"] {
+      > img {
+        &:nth-child(1) {left: -15%; bottom: -10%;}
+        &:nth-child(2) {left: -5%; bottom: 10%;}
+        &:nth-child(3) {left: 10%; bottom: 21%;}
+      }
+    }
+
     &[data-type="right"] {
       > img {
         &:nth-child(1) {right: -20%; bottom: -10%;}

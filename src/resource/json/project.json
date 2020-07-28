@@ -5,8 +5,8 @@
       "term": "2020.03 ~",
       "category": ["WEBSITE", "WEB SOLUTION"],
       "url": "/project/detail/jobflex",
-      "thumbnailType": "right",
-      "thumbnail": ["/resource/img/thumbJobflex.png", "/resource/img/thumbJobflex2.png", "/resource/img/thumbJobflex3.png"]
+      "thumbnailType": "left",
+      "thumbnail": ["/resource/img/thumbnail/jobflex1.png", "/resource/img/thumbnail/jobflex2.png", "/resource/img/thumbnail/jobflex3.png"]
     },
     {
       "title": "inAIR 구축/유지보수",

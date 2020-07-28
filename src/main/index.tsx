@@ -19,7 +19,6 @@ const LatestWork = () => {
 
     return (
         <>
-            <Typing option={typingOption}/>
             <Title p="Project">
                 <strong>Latest<br/>Work</strong>
             </Title>

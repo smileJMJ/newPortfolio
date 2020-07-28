@@ -1,16 +1,16 @@
 {
-  "title": "Jobflex",
+  "title": "JOBFLEX",
   "term": "2020.03 ~ ",
   "info": {
     "link": "https://www.jobflex.com/",
     "client": "마이다스아이티",
-    "role": "Front-End 개발",
+    "role": "Front-End 개발(총 4명)",
     "devenv": "React, TypeScript, Mobx, Webpack",
-    "category": "RESPONSIVE, WEBSITE, WEBSOLUTION"
+    "category": "WEBSITE, WEBSOLUTION"
   },
-  "thumbnailType": "right",
-  "thumbnail": ["/resource/img/thumbJobflex.png", "/resource/img/thumbJobflex2.png", "/resource/img/thumbJobflex3.png"],
-  "introduce": "<p>소개글입니다.</p>",
+  "thumbnailType": "left",
+  "thumbnail": ["/resource/img/thumbnail/jobflex.png", "/resource/img/thumbnail/jobflex2.png", "/resource/img/thumbnail/jobflex3.png"],
+  "introduce": "<p>구직자와 기업의 연결과 채용을 위한 플랫폼인 JOBFLEX를 4월에 출시하였습니다. 현재는 코로나로 인해 채용설명회를 진행할 수 없는 기업들의 온라인 채용 설명회를 개최하고 있으며, 향후 지속적인 업데이트를 통해 채용 시장을 이끄는 플랫폼을 만드는 것이 목표입니다</p>",
   "result": "<div>결과 내용입니다.</div>",
   "experience": "<div>느낀점을 이러합니다.</div>",
   "next": {
