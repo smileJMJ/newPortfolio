@@ -10,7 +10,6 @@ module.exports = merge(common(mode), {
         publicPath: '/',
         contentBase: '/',
         port: 7777,
-        hot: true,
         historyApiFallback: true // 요청 올 때 index.html로 보여주도록
     }
 });

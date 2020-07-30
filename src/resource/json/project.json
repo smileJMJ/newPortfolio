@@ -13,24 +13,8 @@
       "term": "2019.06 ~",
       "category": ["WEB SOLUTION"],
       "url": "/project/detail/inair",
-      "thumbnailType": "left",
-      "thumbnail": ["/resource/img/thumbInair.png", "/resource/img/thumbInair.png", "/resource/img/thumbInair.png"]
-    },
-    {
-      "title": "inTASK 리팩토링",
-      "term": "2019.09",
-      "category": ["WEB SOLUTION"],
-      "url": "/project/detail/intask",
-      "thumbnailType": "left",
-      "thumbnail": ["/resource/img/thumbIntask.png", "/resource/img/thumbIntask.png", "/resource/img/thumbIntask.png"]
-    },
-    {
-      "title": "inSight",
-      "term": "2019.09",
-      "category": ["WEB SOLUTION"],
-      "url": "/project/detail/insight",
-      "thumbnailType": "left",
-      "thumbnail": ["/resource/img/thumbIntask.png", "/resource/img/thumbIntask.png", "/resource/img/thumbIntask.png"]
+      "thumbnailType": "right",
+      "thumbnail": ["/resource/img/thumbnail/inair1.png", "/resource/img/thumbnail/inair2.png", "/resource/img/thumbnail/inair3.png"]
     }
   ]
 }

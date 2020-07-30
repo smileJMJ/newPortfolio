@@ -10,7 +10,7 @@
 
   > figure {
     position: relative;
-    max-width: 60%;
+    max-width: 55%;
     height: 100%;
     margin: 0 auto;
 
@@ -22,16 +22,16 @@
     &[data-type="left"] {
       > img {
         &:nth-child(1) {left: -15%; bottom: -10%;}
-        &:nth-child(2) {left: -5%; bottom: 10%;}
-        &:nth-child(3) {left: 10%; bottom: 21%;}
+        &:nth-child(2) {@include beforeMotion; left: -5%; bottom: 15%;}
+        &:nth-child(3) {@include beforeMotion; left: 10%; bottom: 21%;}
       }
     }
 
     &[data-type="right"] {
       > img {
         &:nth-child(1) {right: -20%; bottom: -10%;}
-        &:nth-child(2) {right: -10%; bottom: 11%;}
-        &:nth-child(3) {right: 7%; bottom: 22%;}
+        &:nth-child(2) {@include beforeMotion; right: -10%; bottom: 11%;}
+        &:nth-child(3) {@include beforeMotion; right: 7%; bottom: 22%;}
       }
     }
   }
