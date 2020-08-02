@@ -21,11 +21,11 @@ const ProjectContent = (props: IProps) => {
 
     if(props) {
         return (
-            <>
+            <div className={css.detail}>
                 <Title p={goList}>{title}</Title>
                 <section className={css.visual}>
                     <div className={css.thumb}>
-                        <Thumbnail thumbnailType={thumbnailType} thumbnail={thumbnail}/>
+                        <Thumbnail thumbnailType={thumbnailType} thumbnail={thumbnail} isMotion={false}/>
                     </div>
                     <TitleBorderBottom title="INFO">
                         <InfoItem data={info}/>
@@ -35,7 +35,7 @@ const ProjectContent = (props: IProps) => {
                 { result && <TitleInnerHtmlContent h1="RESULT" content={result} /> }
                 { experience && <TitleInnerHtmlContent h1="EXPERIENCE" content={experience} /> }
                 { next && <Next name={next.name} link={next.link}/> }
-            </>
+            </div>
         );
     } else return <></>;
 };

@@ -14,7 +14,7 @@ const Next = (props: IProps) => {
         <>
             <TitleBorderBottom title="NEXT">
                 <Link to={link} className={css.next}>
-                    <strong>{name}</strong>
+                    <strong dangerouslySetInnerHTML={{__html: name}}></strong>
                 </Link>
             </TitleBorderBottom>
         </>

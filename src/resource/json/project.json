@@ -15,6 +15,22 @@
       "url": "/project/detail/inair",
       "thumbnailType": "right",
       "thumbnail": ["/resource/img/thumbnail/inair1.png", "/resource/img/thumbnail/inair2.png", "/resource/img/thumbnail/inair3.png"]
+    },
+    {
+      "title": "inAIR 홍보사이트 구축 작업",
+      "term": "2018.11 ~ 2019.02",
+      "category": ["WEBSITE", "RESPONSIVE"],
+      "url": "/project/detail/midashri",
+      "thumbnailType": "left",
+      "thumbnail": ["/resource/img/thumbnail/midashri1.png", "/resource/img/thumbnail/midashri2.png", "/resource/img/thumbnail/midashri3.png"]
+    },
+    {
+      "title": "신동아종합건설 웹사이트 리뉴얼 작업",
+      "term": "2017.12 ~ 2018.02",
+      "category": ["WEBSITE", "RESPONSIVE"],
+      "url": "/project/detail/sdag",
+      "thumbnailType": "right",
+      "thumbnail": ["/resource/img/thumbnail/sdag1.png", "/resource/img/thumbnail/sdag2.png", "/resource/img/thumbnail/sdag3.png"]
     }
   ]
 }

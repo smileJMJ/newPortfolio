@@ -1,73 +1,82 @@
 @import '../../resource/css/mixin/mixin';
 
-$dark: themeColor($color, "dark");
-$bright: themeColor($color, "bright");
+.detail {
+  $dark: themeColor($color, "dark");
+  $bright: themeColor($color, "bright");
 
-.goList {
-  > span {@include hidden;}
-  > i {
-    margin-left: 10px;
-    transition: margin-left .3s ease-out;
+  h1 {font-size: 7.25rem !important;}
 
-    &::after {
-      display: inline-block;
-      content: '\e879';
-      font-family: 'Linearicons-Free';
-      font-size: 1rem;
-      color: $dark;
+  .goList {
+    > span {@include hidden;}
+    > i {
+      margin-left: 10px;
+      transition: margin-left .3s ease-out;
 
-      body[data-theme="bright"] & {color: $bright;}
+      &::after {
+        display: inline-block;
+        content: '\e879';
+        font-family: 'Linearicons-Free';
+        font-size: 1rem;
+        color: $dark;
+
+        body[data-theme="bright"] & {color: $bright;}
+      }
     }
+
+    &:hover > i {margin-left: 0;}
   }
 
-  &:hover > i {margin-left: 0;}
-}
+  .visual {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10rem;
 
-.visual {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 10rem;
+    > .thumb {
+      width: 58%;
+    }
 
-  > .thumb {
-    width: 58%;
-  }
+    > dl {
+      width: 38%;
 
-  > dl {
-    width: 38%;
+      ul > li {
+        margin-bottom: 3rem;
+        &:first-child {margin-top: 0;}
 
-    ul > li {
-      margin-bottom: 3rem;
-      &:first-child {margin-top: 0;}
+        > dl {
+          > dt {
+            margin-bottom: 1rem;
+            font-size: 1.05rem;
+            font-family: 'Montserrat_Medium';
+            color: $dark;
+            text-transform: uppercase;
 
-      > dl {
-        > dt {
-          margin-bottom: 1rem;
-          font-size: 1.05rem;
-          font-family: 'Montserrat_Medium';
-          color: $dark;
-          text-transform: uppercase;
+            body[data-theme="bright"] & {color: $bright;}
+          }
+          > dd, > dd > a {
+            font-size: 1.05rem;
+            color: $dark;
+            opacity: 0.7;
+            transition: opacity .2s ease-out;
 
-          body[data-theme="bright"] & {color: $bright;}
-        }
-        > dd, > dd > a {
-          font-size: 1.05rem;
-          color: $dark;
-          opacity: 0.7;
-          transition: opacity .2s ease-out;
+            &:hover {opacity: 1;}
 
-          &:hover {opacity: 1;}
-
-          body[data-theme="bright"] & {color: $bright;}
+            body[data-theme="bright"] & {color: $bright;}
+          }
         }
       }
     }
   }
-}
 
-.content {
-  margin-top: 2rem;
+  .content {
+    margin-top: 2rem;
 
-  > h1 {
-    font-size: 6rem;
+    > h1 {
+      font-size: 6rem;
+    }
+  }
+
+  @media (max-width: 768px) {
+    h1 {font-size: 4rem !important;}
   }
 }
+

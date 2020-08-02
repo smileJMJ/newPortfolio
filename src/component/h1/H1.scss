@@ -5,6 +5,7 @@
   font-size: 8rem;
   color: themeColor($color, "dark");
   letter-spacing: 0.3rem;
+  line-height: 1.2;
 
   body[data-theme="bright"] & {color: themeColor($color, "bright");}
 }

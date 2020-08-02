@@ -1,0 +1,19 @@
+{
+  "title": "신동아종합건설 웹사이트 리뉴얼 작업",
+  "term": "2017.12 ~ 2018.02",
+  "info": {
+    "link": "http://sdag.co.kr",
+    "client": "신동아종합건설",
+    "role": "Front-End 개발",
+    "devenv": "HTML5, CSS3, jQuery, Git",
+    "category": "WEBSITE, RESPONSIVE"
+  },
+  "thumbnailType": "right",
+  "thumbnail": ["/resource/img/thumbnail/sdag1.png", "/resource/img/thumbnail/sdag2.png", "/resource/img/thumbnail/sdag3.png"],
+  "introduce": "<p>신동아종합건설 웹사이트 리뉴얼 작업의 핵심은 반응형이었습니다. 기존의 웹사이트의 노후화 된 디자인과 UI를 새롭게 바꾸고 다양한 디바이스 환경에서 최적화 되도록 반응형 작업을 진행했습니다. 또한, 신동아종합건설 웹사이트 리뉴얼은 반응형 UI 분기 작업과 효율적인 개발에 대한 고민을 했던 프로젝트였습니다.</p>",
+  "result": "<h2>01. 반응형 UI 분기 작업</h2> <p>메인페이지의 사업영역 탭슬라이드는 웹에서는 한 줄로 나열된 탭들이 모바일에서 버튼/스와이프 UI로 변경되는데 이 때 모바일 UI를 웹에서 기능 해제를 해주는 구현이 쉽지 않았습니다. 처음은 Slick 슬라이드를 사용하여 구현하였으나 기능 초기화 및 해제가 불편하여, 모바일에서 스와이프 및 버튼 클릭하는 UI를 직접 구현하여 해제 및 기능 작동이 용이하도록 작업했습니다.</p> <h2>02. 효율적인 메뉴 관리</h2> <p>신동아종합건설 웹사이트는 서브 페이지의 GNB, 서브 상단 네비게이션, 로케이션에서 사이트 메뉴를 노출하였으며 세 곳에서 메뉴를 효율적으로 관리할 수 있는 방법을 생각하게 되었습니다. GNB 마크업 구조를 기반으로 상단 네비게이션과 로케이션은 스크립트를 이용해 동적으로 생성하여 효율성을 높이도록 작업했습니다.</p><figure><img src=\"/resource/img/sdagImg1.png\" alt=\"\"/></figure>",
+  "next": {
+    "name": "자이 CRM 구축",
+    "link": "/project/detail/xicrm"
+  }
+}
