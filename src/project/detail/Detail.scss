@@ -4,6 +4,9 @@
   $dark: themeColor($color, "dark");
   $bright: themeColor($color, "bright");
 
+  display: none;
+  opacity: 0;
+
   h1 {font-size: 7.25rem !important;}
 
   .goList {
