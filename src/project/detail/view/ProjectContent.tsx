@@ -25,7 +25,7 @@ const ProjectContent = (props: IProps) => {
                 <Title p={goList}>{title}</Title>
                 <section className={css.visual}>
                     <div className={css.thumb}>
-                        <Thumbnail thumbnailType={thumbnailType} thumbnail={thumbnail} isMotion={false}/>
+                        {thumbnail && <Thumbnail thumbnailType={thumbnailType} thumbnail={thumbnail} isMotion={false}/>}
                     </div>
                     <TitleBorderBottom title="INFO">
                         <InfoItem data={info}/>

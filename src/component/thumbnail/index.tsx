@@ -1,4 +1,4 @@
-import React, {useCallback, useEffect, useRef} from 'react';
+import React, {useEffect, useRef} from 'react';
 import {TweenMax} from 'gsap/all';
 import {IThumbnail} from './type';
 
@@ -6,7 +6,7 @@ import css from './Thumbnail.scss';
 
 const Thumbnail = (props: IThumbnail) => {
     const {thumbnailType, thumbnail, isMotion} = props;
-    const refArr = [];
+    const refArr: React.RefObject<HTMLSpanElement>[] = [];
     const thumbnailEle = thumbnail && thumbnail.map((v, i) => {
         const ref = useRef(null);
         refArr.push(ref);

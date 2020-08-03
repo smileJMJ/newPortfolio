@@ -13,7 +13,6 @@ import Footer from "./component/footer";
 const App = () => {
     return(
         <BrowserRouter>
-            <ScrollToTop/>
             <Header/>
             <div id="container">
                 <Switch>
