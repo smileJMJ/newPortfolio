@@ -1,0 +1,18 @@
+{
+  "title": "KT 채용사이트 리뉴얼",
+  "term": "2017.07 ~ 2017.09",
+  "info": {
+    "link": "https://recruit.kt.com/",
+    "client": "KT 채용",
+    "role": "Front-End 개발",
+    "devenv": "HTML5, CSS3, Javascript(jQuery), Spring",
+    "category": "WEBSITE"
+  },
+  "thumbnailType": "right",
+  "thumbnail": ["/resource/img/thumbnail/ktrecruit1.png", "/resource/img/thumbnail/ktrecruit2.png", "/resource/img/thumbnail/ktrecruit3.png"],
+  "result": "<p>KT 채용사이트의 웹/모바일 사이트 중 저는 웹사이트를 구축하였습니다. 채용사이트의 딱딱한 느낌이 덜하도록 모션에 신경을 썼으며 그룹사소개 데이터는 JSONP로 프론트에서 별도로 관리하면서 Ajax로 데이터를 바인딩하는 경험을 해볼 수 있었습니다.</p>",
+  "next": {
+    "name": "kt estate 리뉴얼",
+    "link": "/project/detail/ktestate"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "title": "녹색기술센터 / 정보시스템 고도화 구축",
+  "term": "2017.01 ~ 2017.03",
+  "info": {
+    "link": "https://www.gtck.re.kr/frt/main.do",
+    "client": "녹색기술센터",
+    "role": "Front-End 개발",
+    "devenv": "HTML5, CSS3, Javascript(jQuery), jsp",
+    "category": "WEBSITE, WEB ACCESSIBILITY"
+  },
+  "thumbnailType": "right",
+  "thumbnail": ["/resource/img/thumbnail/green1.png", "/resource/img/thumbnail/green2.png", "/resource/img/thumbnail/green3.png"],
+  "result": "<h2>01. 웹접근성 인증마크 취득</h2>\n<p>웹접근성 인증마크를 취득하는 프로젝트는 마크업 구조를 설계할 때부터 웹접근성을 준수할 수 있도록 설계해야합니다.</p><p>녹색기술센터와 정보시스템 사이트 2개의 웹접근성 작업을 진행하며 어려운 점도 많았지만 웹사이트에서 제공하는 정보들을 인식할 수 없는 분들을 위해선 평소 작업할 때에도 기본적인 웹접근성은 준수할 수 있도록 해야겠다고 생각할 수 있었던 프로젝트였습니다.</p>\n<h2>02. jQuery 캘린더 UI 웹접근성 커스터마이징 진행</h2>\n<p>jQuery의 캘린더는 웹접근성이 준수된 UI가 아니었기 때문에 jQuery UI의 캘린더를 웹접근성을 준수하도록 커스터마이징 작업을 진행하였습니다.</p>",
+  "next": {
+    "name": "하이원리조트 / 강원랜드 유지보수 및<br/>KLACC(도박중독 사이트) 구축",
+    "link": "/project/detail/klacc"
+  }
+}

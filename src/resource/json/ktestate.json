@@ -1,0 +1,19 @@
+{
+  "title": "kt estate 리뉴얼",
+  "term": "2017.07 ~ 2017.08",
+  "info": {
+    "link": "https://www.ktestate.com",
+    "client": "kt estate",
+    "role": "Front-End 개발",
+    "devenv": "HTML5, SASS, Javascript(jQuery), Gulp, ASP",
+    "category": "WEBSITE, RESPONSIVE"
+  },
+  "thumbnailType": "left",
+  "thumbnail": ["/resource/img/thumbnail/ktestate1.png", "/resource/img/thumbnail/ktestate2.png", "/resource/img/thumbnail/ktestate3.png"],
+  "introduce": "<p>kt estate 리뉴얼 프로젝트는 반응형 웹사이트로 작업한 첫 번째 프로젝트이자 Sass를 처음 도입해 본 프로젝트였습니다.</p>",
+  "result": "<h2>01. 반응형(웹/태블릿/모바일)과 Sass로 스타일 작업 진행</h2>\n<p>미디어 쿼리를 사용하여 반응형 분기처리가 될 수 있도록 작업하였으며 Sass의 mixin과 변수 선언 기능을 활용하여 좀 더 편리하게 구현하였습니다.</p>\n<h2>02. GNB 메뉴 구조를 JSON으로 만들어 GNB 메뉴의 확장성 추구</h2>\n<p>kt estate 웹사이트에서는 GNB, 로케이션, 사이트맵, 모바일 메뉴 등 메뉴를 여러 곳에서 사용하기 때문에 효율적으로 관리할 수 있도록 JSON 형태로 만들었으며 스크립트룰 이용해 동적으로 마크업을 추가할 수 있도록 구현하였습니다. 메뉴 구조나 정보가 변경되었을 때 유지보수가 쉽다는 장점과 스크립트 로딩 시간으로 인해 마크업이 동적으로 추가되기 전의 화면이 노출될 수 있다는 단점이 있었습니다.</p>\n<h2>03. 높이가 유동적인 리스트 정렬 개발</h2>\n<p>[사업영역 > 개발투자 > 주요실적] 페이지에서 높이가 다른 리스트들을 정렬할 수 있도록 자체 개발하였습니다.</p>\n<p><a href=\"https://github.com/smileJMJ/otherHeightList\" target=\"_blank\">GITHUB</a><a href=\"https://smilejmj.github.io/otherHeightList/index.html\" target=\"_blank\">실행화면</a></p>",
+  "next": {
+    "name": "녹색기술센터 / 정보시스템 고도화 구축",
+    "link": "/project/detail/green"
+  }
+}

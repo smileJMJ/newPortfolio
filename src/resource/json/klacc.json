@@ -1,0 +1,14 @@
+{
+  "title": "하이원리조트 / 강원랜드 유지보수 및 KLACC(도박중독 사이트) 구축",
+  "term": "2015.07 ~ 2016.04",
+  "info": {
+    "link": "http://klacc.high1.com/Ghome/main.high1",
+    "client": "하이원리조트 / 강원랜드",
+    "role": "Front-End 개발",
+    "devenv": "HTML5, CSS3, Javascript(jQuery), jsp",
+    "category": "WEBSITE, WEB ACCESSIBILITY"
+  },
+  "thumbnailType": "left",
+  "thumbnail": ["/resource/img/thumbnail/klacc1.png", "/resource/img/thumbnail/klacc2.png", "/resource/img/thumbnail/klacc3.png"],
+  "result": "<h2>01. 웹 접근성 인증마크 갱신</h2> <p>강원랜드와 하이원리조트 사이트는 해마다 웹접근성 인증마크를 갱신하였으며, 저는 하이원리조트의 웹접근성 준수 작업을 담당했습니다. 하이원리조트 사이트는 제공하는 정보들의 양도 많고 형태가 다양했기 때문에 대체텍스트를 제공하거나 영상에 대한 자막을 제공하는 등 컨텐츠에 대한 접근성 작업이 상당했던 프로젝트였습니다.</p> <h2>02. KLACC(강원랜드 도박중독센터) 사이트 구축 - 처음 담당한 구축 프로젝트</h2> <p>KLACC 사이트는 처음 맡은 구축 프로젝트였으며 폴더 구조와 페이지 이름, 스타일 규칙과 사이트 전체 설계 등 많은 고민을 하며 사이트에 대한 시야를 넓힐 수 있었고 구축 작업 프로세스를 경험할 수 있었습니다.</p> <h2>03. 강원랜드 및 KLACC 배너 슬라이드 자체 개발(Bookflip)</h2> <p>당시 책을 넘기는 듯한 효과의 슬라이드를 구현해달라는 고객의 요청을 받고 슬라이드를 구현하였습니다. flip 효과를 응용하여 책을 넘기는 듯한 효과를 주는 플러그인들은 존재했으나 IE 9버전 이하부터 지원하지 않았기 때문에 사용할 수가 없어 Bookflip 슬라이드를 직접 만들게 되었습니다. IE 10 이상은 책 넘기는 모션으로 전환이 되며 IE 9 이하는 일반 슬라이드 모션으로 실행되도록 구현하였습니다.</p> <p><a href=\"https://github.com/smileJMJ/bookflip\" target=\"_blank\">GITHUB</a><a href=\"https://smilejmj.github.io/bookflip/index4_plugin.html\" target=\"_blank\">실행화면</a></p>"
+}

@@ -31,6 +31,46 @@
       "url": "/project/detail/sdag",
       "thumbnailType": "right",
       "thumbnail": ["/resource/img/thumbnail/sdag1.png", "/resource/img/thumbnail/sdag2.png", "/resource/img/thumbnail/sdag3.png"]
+    },
+    {
+      "title": "자이 CRM 구축",
+      "term": "2017.09 ~ 2017.10",
+      "category": ["WEBSOLUTION"],
+      "url": "/project/detail/xicrm",
+      "thumbnailType": "left",
+      "thumbnail": ["/resource/img/thumbnail/xicrm1.png", "/resource/img/thumbnail/xicrm2.png", "/resource/img/thumbnail/xicrm3.png"]
+    },
+    {
+      "title": "KT 채용사이트 리뉴얼",
+      "term": "2017.07 ~ 2017.09",
+      "category": ["WEBSITE"],
+      "url": "/project/detail/ktrecruit",
+      "thumbnailType": "right",
+      "thumbnail": ["/resource/img/thumbnail/ktrecruit1.png", "/resource/img/thumbnail/ktrecruit2.png", "/resource/img/thumbnail/ktrecruit3.png"]
+    },
+    {
+      "title": "kt estate 리뉴얼",
+      "term": "2017.07 ~ 2017.08",
+      "category": ["WEBSITE", "RESPONSIVE"],
+      "url": "/project/detail/ktestate",
+      "thumbnailType": "left",
+      "thumbnail": ["/resource/img/thumbnail/ktestate1.png", "/resource/img/thumbnail/ktestate2.png", "/resource/img/thumbnail/ktestate3.png"]
+    },
+    {
+      "title": "녹색기술센터 / 정보시스템 고도화 구축",
+      "term": "2017.01 ~ 2017.03",
+      "category": ["WEBSITE", "WEB ACCESSIBILITY"],
+      "url": "/project/detail/green",
+      "thumbnailType": "right",
+      "thumbnail": ["/resource/img/thumbnail/green1.png", "/resource/img/thumbnail/green2.png", "/resource/img/thumbnail/green3.png"]
+    },
+    {
+      "title": "하이원리조트 / 강원랜드 유지보수 및<br/>KLACC(도박중독 사이트) 구축",
+      "term": "2015.07 ~ 2016.04",
+      "category": ["WEBSITE", "WEB ACCESSIBILITY"],
+      "url": "/project/detail/klacc",
+      "thumbnailType": "left",
+      "thumbnail": ["/resource/img/thumbnail/klacc1.png", "/resource/img/thumbnail/klacc2.png", "/resource/img/thumbnail/klacc3.png"]
     }
   ]
 }
