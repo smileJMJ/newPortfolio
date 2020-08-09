@@ -1,0 +1,38 @@
+.introduce {
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  margin-bottom: 8rem;
+
+  > dl {
+    width: 48%;
+
+    > dd {
+      > ul {
+        > li {
+          display: flex;
+          justify-content: flex-start;
+          margin-top: 1.25rem;
+
+          &:first-child {margin-top: 0;}
+
+          &::before {
+            display: inline-block;
+            content: '·';
+            margin-right: 7px;
+            font-weight: bold;
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width: 1080px) {
+    display: block;
+
+    > dl {
+      width: 100%;
+      margin-bottom: 4rem;
+    }
+  }
+}

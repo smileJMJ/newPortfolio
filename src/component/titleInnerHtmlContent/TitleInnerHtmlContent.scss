@@ -35,6 +35,21 @@
       font-size: 1.125rem;
       margin-bottom: 1rem;
       opacity: 0.9;
+
+      > a {
+        display: inline-block;
+        margin-right: 10px;
+        font-size: 1rem;
+        color: themeColor($color, "dark");
+        border-bottom-width: 1px;
+        border-bottom-style: solid;
+        border-bottom-color: themeColor($color, "dark");
+
+        body[data-theme="bright"] & {
+          color: themeColor($color, "bright");
+          border-bottom-color: themeColor($color, "bright");
+        }
+      }
     }
     > figure {
       margin: 2rem;

@@ -17,15 +17,11 @@ const ListItem = (props: IProps) => {
 
     const handleMouseEnter = () => {
         if(isMotion) return;
-
-        //TweenMax.to(thumb.current, 0.4, {height: '30vw', ease: 'Quad.easeOut'});
         setIsMotion(true);
     };
 
     const handleMouseLeave = () => {
         if(!isMotion) return;
-
-        //TweenMax.to(thumb.current, 0.4, {height: '35vw', ease: 'Quad.easeOut'});
         setIsMotion(false);
     };
 
@@ -33,7 +29,7 @@ const ListItem = (props: IProps) => {
         <Link to={data['url']} className={css.listItem} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
             <dl className={css.title}>
                 <dt>
-                    <strong>{data['title']}</strong>
+                    <strong dangerouslySetInnerHTML={{__html: data['title']}}></strong>
                     <span>{data['category'].join(', ')}</span>
                 </dt>
                 <dd className={css.term}>{data['term']}</dd>
