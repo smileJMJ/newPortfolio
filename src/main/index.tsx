@@ -16,7 +16,7 @@ const LatestWork = () => {
                 <strong>Latest<br/>Work</strong>
             </Title>
             <ProjectList maxlength={3}/>
-            <Next name="About" link="/about"/>
+            <Next name="Project" link="/project"/>
         </>
     );
 };
