@@ -20,7 +20,7 @@ const Introduce = () => {
                 <ul>
                     <li>React, Vue, ES6등을 이용한 신규 서비스 개발</li>
                     <li>정적인 디자인/데이터를 인터랙티브하게 만들고 시각화하는 것</li>
-                    <li>다양하고 새로운 UI/컴포넌트를 개발</li>
+                    <li>다양하고 새로운 UI/컴포넌트를 개발 및 storybook으로 관리</li>
                     <li>새로운 기능/모듈/플러그인을 개발하고 적용</li>
                 </ul>
             </TitleBorderBottom>
