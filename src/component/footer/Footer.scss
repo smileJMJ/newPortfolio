@@ -41,6 +41,7 @@
                 font-family: 'Linearicons-Free';
                 font-size: 2rem;
                 color: themeColor($color, "dark");
+                line-height: 2rem;
 
                 body[data-theme="bright"] & {color: themeColor($color, "bright");}
               }
