@@ -8,6 +8,13 @@ $thumbBgColor: ("dark": #1f1f1f, "bright": #eddbd9);
 
 @mixin webPadding {
   padding: 0 8%;
+
+  @media (min-width: 768px) and (max-width: 1024px) {
+    padding: 0 6.5%;
+  }
+  @media (max-width: 767px) {
+    padding: 0 5.6%;
+  }
 }
 
 @mixin hidden {

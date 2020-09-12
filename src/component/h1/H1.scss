@@ -6,6 +6,11 @@
   color: themeColor($color, "dark");
   letter-spacing: 0.3rem;
   line-height: 1.2;
+  word-break: break-all;
 
   body[data-theme="bright"] & {color: themeColor($color, "bright");}
+
+  @media (max-width: 767px) {
+    font-size: 5rem;
+  }
 }

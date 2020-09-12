@@ -81,4 +81,20 @@
       }
     }
   }
+
+  @media (max-width: 767px) {
+    margin-bottom: 7.5rem;
+
+    > div {
+      > p {
+        font-size: 1.25rem;
+        line-height: 2;
+      }
+      > figure {
+        margin: 3rem 0;
+
+        > img {max-width: 100%;}
+      }
+    }
+  }
 }

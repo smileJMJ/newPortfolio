@@ -22,4 +22,13 @@
 
     body[data-theme="bright"] & {color: themeColor($color, "bright");}
   }
+
+  @media (max-width: 767px) {
+    > dt {
+      font-size: 1.25rem;
+    }
+    > dd {
+      padding: 2rem 0;
+    }
+  }
 }
