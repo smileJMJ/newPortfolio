@@ -6,6 +6,7 @@ import css from './Header.scss';
 interface IGnbItem {
     name: string;
     link: string;
+    blank: boolean; // 새창 여부
 }
 
 const Header = () => {
@@ -35,7 +36,10 @@ const Header = () => {
                 <ul>
                     {
                         gnbData.length > 0 &&
-                        gnbData.map(v => <li key={v.link}><NavLink to={v.link} activeClassName={css.active}>{v.name}</NavLink></li>)
+                        gnbData.map(v => {
+                            if(v.blank) return <li key={v.link}><a href={v.link} target="_blank">{v.name}</a></li>;
+                            return <li key={v.link}><NavLink to={v.link} activeClassName={css.active}>{v.name}</NavLink></li>;
+                        })
                     }
                 </ul>
             </nav>
