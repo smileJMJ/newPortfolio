@@ -3,10 +3,5 @@
     "name": "Project",
     "link": "/project",
     "blank": false
-  },
-  {
-    "name": "Storybook",
-    "link": "http://mjpf.me/storybook/",
-    "blank": true
   }
 ]
