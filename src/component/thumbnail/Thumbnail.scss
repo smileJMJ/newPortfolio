@@ -19,6 +19,18 @@
       width: 100%;
     }
 
+    &[data-type="mobile"] {
+      max-width: 100%;
+      text-align: center;
+      overflow: hidden;
+
+      > img {
+        position: static;
+        width: auto;
+        height: 100%;
+      }
+    }
+
     &[data-type="left"] {
       > img {
         &:nth-child(1) {left: -15%; bottom: -10%;}

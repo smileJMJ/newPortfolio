@@ -1,8 +1,40 @@
 {
   "list": [
     {
+      "title": "[CJONSTYLE] 카테고리/브랜드/검색 개선",
+      "term": "2021.08 ~ 2021.11",
+      "category": ["WEBSITE", "COMMERCE"],
+      "url": "/project/detail/cjonstyle_category",
+      "thumbnailType": "mobile",
+      "thumbnail": ["/resource/img/thumbnail/cjonstyle_category.png"]
+    },
+    {
+      "title": "[CJONSTYLE] 모바일라이브 개선",
+      "term": "2021.06 ~ 2021.07",
+      "category": ["WEBSITE", "COMMERCE"],
+      "url": "/project/detail/cjonstyle_mobilelive",
+      "thumbnailType": "mobile",
+      "thumbnail": ["/resource/img/thumbnail/cjonstyle_mobilelive.png"]
+    },
+    {
+      "title": "CJMALL → CJONSTYLE 개편",
+      "term": "2021.01 ~ 2021.04",
+      "category": ["WEBSITE", "COMMERCE"],
+      "url": "/project/detail/cjonstyle_renewal",
+      "thumbnailType": "mobile",
+      "thumbnail": ["/resource/img/thumbnail/cjonstyle_renewal.png"]
+    },
+    {
+      "title": "CJONSTYLE(구. CJMALL) 유지운영",
+      "term": "2020.11 ~ 2021.11",
+      "category": ["WEBSITE", "COMMERCE"],
+      "url": "/project/detail/cjonstyle",
+      "thumbnailType": "right",
+      "thumbnail": ["/resource/img/thumbnail/cjonstyle1.png", "/resource/img/thumbnail/cjonstyle2.png", "/resource/img/thumbnail/cjonstyle3.png"]
+    },
+    {
       "title": "JOBFLEX 구축",
-      "term": "2020.03 ~",
+      "term": "2020.03 ~ 2020.08",
       "category": ["WEBSITE", "WEB SOLUTION"],
       "url": "/project/detail/jobflex",
       "thumbnailType": "left",

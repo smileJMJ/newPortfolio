@@ -1,0 +1,19 @@
+{
+  "title": "CJONSTYLE(구. CJMALL) 유지운영",
+  "term": "2020.11 ~ 2021.11",
+  "info": {
+    "link": "https://display.cjonstyle.com/m/homeTab/main?hmtabMenuId=003147&rPIC=homeonstyle",
+    "client": "CJ ENM 커머스부문",
+    "role": "Front-End 개발",
+    "devenv": "HTML5, CSS3, JavaScript, Backbone, Vue",
+    "category": "WEBSITE(PC, MOBILE, WEBVIEW)"
+  },
+  "thumbnailType": "right",
+  "thumbnail": ["/resource/img/thumbnail/cjonstyle1.png", "/resource/img/thumbnail/cjonstyle2.png", "/resource/img/thumbnail/cjonstyle3.png"],
+  "introduce": "",
+  "result": "<ul><li>전시영역(메인 홈탭, 통합검색, 카테고리, 브랜드 등) 유지운영 및 공통 스크립트 개발/수정</li><li>PC / MOBILE / WebView 대응</li><li>매주 목요일마다 정기배포, 매주 수요일에 정적 리소스 빌드 및 정기배포 준비 진행<br/>(배포 브랜치의 커밋내역 확인 및 Jenkins 배포)</li></ul>",
+  "next": {
+    "name": "CJMALL → CJONSTYLE 개편",
+    "link": "/project/detail/cjonstyle_renewal"
+  }
+}

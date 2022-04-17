@@ -14,27 +14,29 @@ const Thumbnail = (props: IThumbnail) => {
     });
 
     useEffect(() => {
-        const dir = thumbnailType === 'left' ? {x: -30, y: 30} : {x: 30, y: 30};
-        const ref = refArr[0].current;
-        const ref1 = refArr[1].current;
-        const ref2 = refArr[2].current;
+        if(thumbnailType !== 'mobile') {
+            const dir = thumbnailType === 'left' ? {x: -30, y: 30} : {x: 30, y: 30};
+            const ref = refArr[0].current;
+            const ref1 = refArr[1].current;
+            const ref2 = refArr[2].current;
 
-        TweenMax.killTweensOf([ref1, ref2]);
+            TweenMax.killTweensOf([ref1, ref2]);
 
-        if(isMotion) {
-            TweenMax.set(ref1, {display: 'block', autoAlpha: 0, x: dir.x, y: dir.y});
-            TweenMax.set(ref2, {display: 'block', autoAlpha: 0, x: dir.x, y: dir.y});
-            TweenMax.to(ref, 0.4, {autoAlpha: 1, x: -dir.x * 0.5, y: 0, ease: 'Quad.easeInOut'});
-            TweenMax.to(ref1, 0.3, {autoAlpha: 1, x: 0, y: 0, ease: 'Quad.easeInOut', delay: 0.1});
-            TweenMax.to(ref2, 0.3, {autoAlpha: 1, x: 0, y: 0, ease: 'Quad.easeInOut', delay: 0.15});
-        } else {
-            TweenMax.to(ref2, 0.3, {autoAlpha: 0, x: dir.x, y: dir.y, ease: 'Quad.easeIn', onComplete: function() {
-                    TweenMax.set(ref2, {display: 'none'});
-                }});
-            TweenMax.to(ref1, 0.3, {autoAlpha: 0, x: dir.x, y: dir.y, ease: 'Quad.easeIn', onComplete: function() {
-                TweenMax.set(ref1, {display: 'none'});
-            }, delay: 0.1});
-            TweenMax.to(ref, 0.4, {x: 0, ease: 'Quad.easeInOut', delay: 0.15});
+            if(isMotion) {
+                TweenMax.set(ref1, {display: 'block', autoAlpha: 0, x: dir.x, y: dir.y});
+                TweenMax.set(ref2, {display: 'block', autoAlpha: 0, x: dir.x, y: dir.y});
+                TweenMax.to(ref, 0.4, {autoAlpha: 1, x: -dir.x * 0.5, y: 0, ease: 'Quad.easeInOut'});
+                TweenMax.to(ref1, 0.3, {autoAlpha: 1, x: 0, y: 0, ease: 'Quad.easeInOut', delay: 0.1});
+                TweenMax.to(ref2, 0.3, {autoAlpha: 1, x: 0, y: 0, ease: 'Quad.easeInOut', delay: 0.15});
+            } else {
+                TweenMax.to(ref2, 0.3, {autoAlpha: 0, x: dir.x, y: dir.y, ease: 'Quad.easeIn', onComplete: function() {
+                        TweenMax.set(ref2, {display: 'none'});
+                    }});
+                TweenMax.to(ref1, 0.3, {autoAlpha: 0, x: dir.x, y: dir.y, ease: 'Quad.easeIn', onComplete: function() {
+                    TweenMax.set(ref1, {display: 'none'});
+                }, delay: 0.1});
+                TweenMax.to(ref, 0.4, {x: 0, ease: 'Quad.easeInOut', delay: 0.15});
+            }
         }
     }, [isMotion]);
 

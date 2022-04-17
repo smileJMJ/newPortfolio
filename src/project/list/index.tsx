@@ -6,7 +6,7 @@ const List = () => {
     return (
         <>
             <Title p="Project">
-                <strong>2015-<br/>2020</strong>
+                <strong>2015-<br/>2021</strong>
             </Title>
             <ProjectList/>
         </>
