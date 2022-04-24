@@ -11,7 +11,7 @@
   "thumbnailType": "right",
   "thumbnail": ["/resource/img/thumbnail/cjonstyle1.png", "/resource/img/thumbnail/cjonstyle2.png", "/resource/img/thumbnail/cjonstyle3.png"],
   "introduce": "",
-  "result": "<ul><li>전시영역(메인 홈탭, 통합검색, 카테고리, 브랜드 등) 유지운영 및 공통 스크립트 개발/수정</li><li>PC / MOBILE / WebView 대응</li><li>매주 목요일마다 정기배포, 매주 수요일에 정적 리소스 빌드 및 정기배포 준비 진행<br/>(배포 브랜치의 커밋내역 확인 및 Jenkins 배포)</li></ul>",
+  "result": "<ul><li>전시영역(메인 홈탭, 통합검색, 카테고리, 브랜드 등) 유지운영 및 공통 스크립트 개발/수정</li><li>PC / MOBILE / WebView 대응</li><li>매주 목요일마다 정기배포, 매주 수요일에 정적 리소스 빌드 및 정기배포 준비 진행<br/>(배포 브랜치의 커밋내역 확인 및 Jenkins 배포)</li><li>개발환경 및 배포 프로세스 가이드 정리</li></ul>",
   "next": {
     "name": "CJMALL → CJONSTYLE 개편",
     "link": "/project/detail/cjonstyle_renewal"

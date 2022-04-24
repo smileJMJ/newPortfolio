@@ -1,7 +1,7 @@
 {
   "list": [
     {
-      "title": "[CJONSTYLE] 카테고리/브랜드/검색 개선",
+      "title": "CJONSTYLE 카테고리/브랜드/검색 개선",
       "term": "2021.08 ~ 2021.11",
       "category": ["WEBSITE", "COMMERCE"],
       "url": "/project/detail/cjonstyle_category",
@@ -9,7 +9,7 @@
       "thumbnail": ["/resource/img/thumbnail/cjonstyle_category.png"]
     },
     {
-      "title": "[CJONSTYLE] 모바일라이브 개선",
+      "title": "CJONSTYLE 모바일라이브 개선",
       "term": "2021.06 ~ 2021.07",
       "category": ["WEBSITE", "COMMERCE"],
       "url": "/project/detail/cjonstyle_mobilelive",

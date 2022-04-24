@@ -14,7 +14,7 @@ const Thumbnail = (props: IThumbnail) => {
     });
 
     useEffect(() => {
-        if(thumbnailType !== 'mobile') {
+        if(!!thumbnailType && thumbnailType !== 'mobile') {
             const dir = thumbnailType === 'left' ? {x: -30, y: 30} : {x: 30, y: 30};
             const ref = refArr[0].current;
             const ref1 = refArr[1].current;
